@@ -1,0 +1,420 @@
+
+body{
+  
+    font-family: Arial;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  
+  /*==================CONTACTANOS 1==================*/
+  /*=================================================*/
+  
+  #ContenedorUno-redes{
+     display: block;
+     text-align: right;
+     background-image: linear-gradient(0deg, #000000 0%, #ae00ff 100%);
+     padding: 5px;
+  
+     padding-right: 20px;
+  
+  }
+  
+  .formato-redes-Uno{
+  /*Formato de los iconos*/
+     width: 28px;
+  }
+  
+  .email-formato{
+     width: 32px;
+  
+  }
+  
+
+  
+  /*=======================MENU======================*/
+  /*=================================================*/
+  .formato-Video{
+    /*LOGOTIPO - VIDEO*/
+       display: flex;
+       width: 130px;
+       height: 130px;
+       border-radius: 100%;
+       border: 2px solid white;
+       object-fit: cover;
+       padding-bottom: 10px;
+       margin-left: 50px;      
+ 
+    }
+    
+  .header{
+     background-color: black;
+     height: 150px;
+  }
+  
+  .nav {
+  
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+
+  }
+  
+  .nav-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+  
+    display: flex;
+    list-style: none;
+    /*Le doy margen a ultimo item del menu*/
+    margin-right: 20px;
+    margin-top: -110px; /*Subo los items en el menu*/
+  }
+  
+  .nav-menu-item {
+  /*items que integran el menu */
+    color: white;
+    font-size: 18px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    
+    padding-top: -50px;
+    margin: 0 10px;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover, .nav-menu-link_active {
+      
+    background-color: #6300af;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.5s;
+  
+  }
+  
+  .nav-toggle {
+  
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+    padding: 0 30px;
+  }
+  
+  /*--Menu responsive--*/
+  /*-------------------*/
+  
+  @media only screen and (max-width: 760px){
+     
+    .header {
+      background-color:#000000;
+   
+    }
+  
+    .nav-menu {
+      
+      background-color: rgb(255, 255, 255); /*Fondo - del menu responsive*/
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+     
+      position: fixed;
+      top: 200px;  /*-------Importante*/
+      width: 100%;
+      padding-bottom: 20px;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.2s;
+    }
+  
+    .nav-menu-item{
+      line-height: 70px;
+    }
+  
+    .nav-menu-link{
+      color: black;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: yellow;
+      color: #20ccd2; /*color verdeagua*/
+    }
+  
+    .nav-toggle {
+     /*RAYAS MENU RESPONSIVE para menu*/
+      display: block;
+      color: rgb(255, 255, 255);
+
+      margin-top: -120px; /*Controlo el item del menu 
+      con la rayatas*/
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+   
+  }/*Resp menu*/
+  
+
+  /*=================TITULO PRINCIPAL===================*/
+  /*====================================================*/
+  
+  .formato-titulo-principal{
+
+     text-align: center;
+  }
+
+ /*====================CAJAS PAGOS=====================*/
+ /*====================================================*/
+
+ #Contenedor-pagos{
+     
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+   margin-top: 100px;
+ }
+
+.hija-nosotros{
+/*Caja hija*/
+   background-color: rgba(247, 255, 4, 0.279);
+   box-shadow: 3px 3px 3px 3px rgb(239, 236, 236);
+   border: 2px solid rgb(224, 224, 224);
+   border-radius: 5px;
+   text-align: center;
+   margin: 20px;
+}
+
+.nombre-del-plan{
+/*Strong*/
+   display: block;
+   text-align: center;
+   background-color: black;
+   color: white;
+   font-style: italic;
+   padding: 20px;
+}
+
+.titulo-h4-precio{
+/*h4 */
+  padding:40px;
+  text-shadow: 1px 2px black;
+}
+
+.especial-999{
+/*Solo por el padding para que quede igual a todas las
+cajas*/
+   padding:40px 50px 40px 50px;
+}
+  
+.precio-formato{
+/*<b> - Precios de nuestros planes*/
+  text-shadow: 2px 2px black;
+  font-size: 50px;
+}
+
+.mes-formato{
+/*  /mes */
+   font-size: 25px;
+}
+
+.formato-precio1{
+/*Formato para el precio 1*/
+   background-color: #8cfff6;
+   color: white;
+}
+
+.formato-precio2{
+/*Formato para el precio 2*/
+   background-color: #68daff;
+   color: white;
+}
+
+.formato-precio3{
+   /*Formato para el precio 3*/
+   background-color: #039fd2;
+   color: white;
+}
+
+.contenedora-items{
+/*UL*/
+   text-align: center;
+   font-size: 20px;
+   padding: 30px;
+   
+}
+.li-precios{
+/*li*/
+   margin-top: 25px;
+}
+
+.contenedor-contactanos{
+/*Contenedor del boton - contactanos*/
+   display: block;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 40px;
+}
+
+.boton-contactanos{
+/*a - enlace (te lleva al wp)*/
+    background-color: rgb(98, 255, 125);
+    color: #064533;
+    border: 1px solid rgb(12, 156, 36);
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.boton-contactanos:hover{
+   background-color: rgb(147, 249, 164);
+}
+
+  
+  /*=================PIE DE PAGINA===================*/
+  /*=================================================*/
+  
+  .contenedor-pie-de-pagina-uno{
+     
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     background: url(../Imagenes/fondo1.jpeg);
+     background-size: cover;
+     padding: 20px;
+     margin-top: 100px;
+  }
+  
+  
+  .hija-pie-de-pagina{
+  /*Caja hija*/ 
+     text-align: center;
+     width: 30%; 
+     background-color: rgb(219, 219, 219);
+     padding: 20px;
+  
+  }
+  
+  .contenedor-imagenes-pie{
+  /*IMAGENES CONTENEDOR (ES UN DIV) - medios de pagos*/
+     text-align: center;
+     padding-bottom: 14px;
+  }
+  
+  .titulos-pie{
+  /*Estilo del los titulos del pie de pagina, donde 
+  se especifica cada items*/
+     font-size: 20px;
+    
+  }
+  
+  @media only screen and (max-width: 800px){
+     .hija-pie-de-pagina{
+        /*Caja hija*/ 
+           text-align: center;
+           width: 100%; 
+     }
+     
+     .respoonsive-mediosPagos{
+        /*Solo le doy espacio*/
+           padding-top: 1px;
+        }
+  
+     .responsive-derechos-reservados{
+        /*Solo le doy espacio*/
+          padding-top: 10px;
+     }
+  
+     .contenedor-imagenes-pie{
+     /*IMAGENES CONTENEDOR (ES UN DIV) - medios de pagos*/
+        padding-bottom: 0;
+     }
+     
+     .espacio-reponsive{
+        padding-top: 60px ;
+     }
+           
+  }/*responsive pie pagina*/
+  
+  @media only screen and (max-width: 550px){
+  
+     .contenedor-pie-de-pagina-uno{
+     
+        display: block;
+        text-align: center;   
+     }
+  
+     .hija-pie-de-pagina{
+        /*Caja hija*/ 
+           text-align: left;
+           width: 100%;
+           padding-top: 30px;
+     }
+     .contenedor-imagenes-pie{
+     /*IMAGENES CONTENEDOR (ES UN DIV) - medios de pagos*/
+           text-align: left;
+     }
+     .espacio-reponsive{
+        padding-top: 60px ;
+     }
+     
+  }/*responsive pie pagina*/
+  
+  /*=================WHATSAPP FLOTANTE===============*/
+  /*=================================================*/
+  
+
+  .btn-wsp{
+   
+   width: 100px;
+   height: 80px;
+   position: fixed;
+   line-height: 55px;
+   bottom: 30px;
+   right: 30px;
+   text-align: center;
+
+   padding-top: 15px;
+   
+}
+
+.iconoTamañoWP{
+/*Icono del WHATSAPP*/
+    width: 70px;
+}
+
+@media only screen and (max-width: 800px){
+
+  .btn-wsp{
+
+     position: fixed;
+     bottom: 20px;
+     right: 0px;
+     padding-top: 15px;
+     padding-bottom: 2px;
+  }
+
+  .iconoTamañoWP{
+
+       width: 60px;
+  }
+
+} /*Responsive Wp*/;
